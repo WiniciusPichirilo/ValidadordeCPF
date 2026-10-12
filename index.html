@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="validator-container">
+        <h2>Validar CPF</h2>
+        <form id="cpfForm">
+            <div class="input-group">
+                <input type="text" id="cpfInput" placeholder="000.000.000-00" maxlength="14" autocomplete="off" required>
+            </div>
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="resultMessage" class="message"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
