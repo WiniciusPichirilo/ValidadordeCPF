@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validador de CPF</title>
+    <title>Validador de CPF e CNPJ Numéricos</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="validator-container">
-        <h2>Validar CPF</h2>
+        <h2>Validar documento</h2>
         <form id="cpfForm">
+            <div class="document-type" role="group" aria-label="Tipo de documento">
+                <button type="button" id="cpfButton" class="type-button active">CPF</button>
+                <button type="button" id="cnpjButton" class="type-button">CNPJ</button>
+            </div>
             <div class="input-group">
                 <input type="text" id="cpfInput" placeholder="000.000.000-00" maxlength="14" autocomplete="off" required>
             </div>
